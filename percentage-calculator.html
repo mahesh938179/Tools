@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Percentage Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Percentage Calculator</h2>
+<input id="value" placeholder="Value">
+<input id="total" placeholder="Total">
+<button onclick="calc()">Calculate</button>
+<p id="out"></p>
+<script>
+function calc(){
+let v=parseFloat(value.value);
+let t=parseFloat(total.value);
+out.innerText=((v/t)*100).toFixed(2)+" %";
+}
+</script>
+</body>
+</html>
